@@ -1,21 +1,34 @@
 "use client";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import menuItems from "@/app/shared/json/menu-items.json";
 import { CircleX, Moon } from "lucide-react";
 
 const Navbar = () => {
   const sideMenuRef = useRef();
+  const [isScrolled, setScrolled] = useState(false);
+
   const openMenu = () =>
     (sideMenuRef.current.style.transform = "translateX(-16rem)");
   const closeMenu = () =>
     (sideMenuRef.current.style.transform = "translateX(16rem)");
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (scrollY > 50) setScrolled(true);
+      else setScrolled(false);
+    });
+  });
+
   return (
     <>
-      <div className="w-full fixed z-50">
+      <div
+        className={`w-full fixed z-50 ${
+          isScrolled ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm" : ""
+        }`}
+      >
         <nav className="max-w-screen-xl mx-auto p-3 flex items-center justify-between">
           <a href="#top">
             <Image
@@ -24,7 +37,11 @@ const Navbar = () => {
               alt=""
             />
           </a>
-          <ul className="hidden md:flex items-center gap-6 lg:gap-8 bg-white rounded-full px-12 py-3 shadow-sm bg-opacity-50">
+          <ul
+            className={`hidden md:flex items-center gap-6 lg:gap-8  rounded-full px-12 py-3 ${
+              isScrolled ? "" : "shadow-sm bg-opacity-50 bg-white"
+            }`}
+          >
             {menuItems.data.map((item, index) => {
               return (
                 <li key={index}>
