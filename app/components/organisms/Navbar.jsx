@@ -14,9 +14,6 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[80%]">
-        <Image src={assets.header_bg_color} alt="" className="w-full" />
-      </div>
       <div className="w-full fixed z-50">
         <nav className="max-w-screen-xl mx-auto p-3 flex items-center justify-between">
           <a href="#top">
