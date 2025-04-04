@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 
 import menuItems from "@/app/shared/json/menu-items.json";
+import { CircleX, Moon } from "lucide-react";
 
 const Navbar = () => {
   const sideMenuRef = useRef();
@@ -34,7 +35,7 @@ const Navbar = () => {
           </ul>
           <div className="flex items-center gap-3">
             <button>
-              <Image src={assets.moon_icon} alt="" className="w-4" />
+              <Moon size={24} />
             </button>
             <a
               href="#contact"
@@ -54,11 +55,7 @@ const Navbar = () => {
           className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50  h-screen bg-rose-50 transition duration-500"
         >
           <div className="absolute right-6 top-6" onClick={closeMenu}>
-            <Image
-              src={assets.close_black}
-              alt=""
-              className="w-4 cursor-pointer"
-            />
+            <CircleX size={24} />
           </div>
 
           {menuItems.data.map((item, index) => {
