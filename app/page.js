@@ -1,4 +1,12 @@
-import { About, HeroSection, Navbar, Portfolio, Services } from "./components";
+import {
+  About,
+  Contact,
+  HeroSection,
+  Navbar,
+  Portfolio,
+  Services,
+  Footer,
+} from "./components";
 
 export default function Home() {
   return (
@@ -8,6 +16,8 @@ export default function Home() {
       <About />
       <Services />
       <Portfolio />
+      <Contact />
+      <Footer />
     </>
   );
 }
