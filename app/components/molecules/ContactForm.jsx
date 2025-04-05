@@ -27,7 +27,7 @@ export default function ContactForm() {
 
       <div className="flex justify-center">
         <button className="bg-[#bc6c25] order-2 md:order-1 text-white px-4 py-2 rounded-md md:rounded-full cursor-pointer flex items-center gap-2 hover:bg-[#611a00] transition">
-          Connect with Me
+          Submit
           <ArrowRight size={20} />
         </button>
       </div>
