@@ -1,9 +1,7 @@
 import React from "react";
 import PrimaryInfo from "../atoms/PrimaryInfo";
 import Card from "../molecules/Card";
-import { assets } from "@/assets/assets";
-import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Portfolio = () => {
   const cards = [
@@ -48,8 +46,8 @@ const Portfolio = () => {
       </div>
       <div className="flex justify-center py-5">
         <button className="flex items-center gap-2 px-5 py-1.5 border border-gray-500 rounded-full cursor-pointer">
-          Contact
-          <ArrowUpRight size={20} />
+          Show More
+          <ArrowRight size={20} />
         </button>
       </div>
     </div>

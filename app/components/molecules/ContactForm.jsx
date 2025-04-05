@@ -7,13 +7,13 @@ export default function ContactForm() {
         <input
           type="text"
           placeholder="Name"
-          className="w-full p-2 border border-gray-300 rounded"
+          className="w-full p-2 border-2 border-[#e6c74a] focus:ring-[#e6c74a] rounded"
           required
         />
         <input
           type="email"
           placeholder="Email"
-          className="w-full p-2 border border-gray-300 rounded"
+          className="w-full p-2  border-2 border-[#e6c74a] focus:ring-[#e6c74a] rounded"
           required
         />
       </div>
@@ -21,7 +21,7 @@ export default function ContactForm() {
       <textarea
         placeholder="Your Message"
         rows={6}
-        className="w-full p-2 border border-gray-300 rounded"
+        className="w-full p-2 border-2 border-[#e6c74a] focus:ring-[#e6c74a] rounded"
         required
       />
 
