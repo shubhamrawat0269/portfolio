@@ -51,9 +51,9 @@ const Navbar = () => {
             })}
           </ul>
           <div className="flex items-center gap-3">
-            <button>
+            {/* <button>
               <Moon size={24} />
-            </button>
+            </button> */}
             <a
               href="#contact"
               className="hidden lg:flex items-center gap-3 px-5 py-1.5 border border-gray-500 rounded-full ml-5"
