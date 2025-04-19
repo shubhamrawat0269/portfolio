@@ -1,29 +1,7 @@
 import React from "react";
-import { Code, Monitor, Paintbrush } from "lucide-react";
 import Image from "next/image";
-import { assets } from "@/assets/assets";
+import { assets, cardData, toolsData } from "@/assets/assets";
 import PrimaryInfo from "../atoms/PrimaryInfo";
-
-// JSON for cards
-const cardData = [
-  {
-    icon: <Code size={40} />,
-    title: "Frontend Dev",
-    description: "Building seamless and responsive UIs with modern frameworks.",
-  },
-  {
-    icon: <Monitor size={40} />,
-    title: "UI/UX Enthusiast",
-    description: "Focused on crafting intuitive and user-friendly interfaces.",
-  },
-  {
-    icon: <Paintbrush size={40} />,
-    title: "Creative Thinker",
-    description: "Designing with a balance of functionality and aesthetics.",
-  },
-];
-
-const tools = [assets.vscode, assets.mongodb, assets.figma, assets.git];
 
 const About = () => {
   return (
@@ -61,10 +39,10 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-4">Tools I Use</h3>
             <div className="flex flex-wrap gap-2">
-              {tools.map((tool, index) => (
+              {toolsData.map((tool, index) => (
                 <div
                   key={index}
-                  className="bg-white shadow rounded-xl p-2 flex items-center justify-center border border-[#99582a]"
+                  className="bg-white shadow rounded-xl p-2 flex items-center justify-center cursor-pointer border border-[#99582a]"
                 >
                   <Image
                     src={tool}
