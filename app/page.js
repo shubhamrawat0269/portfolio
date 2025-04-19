@@ -6,7 +6,8 @@ import {
   Portfolio,
   Services,
   Footer,
-} from "./components";
+  ScrollToTopButton,
+} from "@/app/components";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Portfolio />
       <Contact />
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 }

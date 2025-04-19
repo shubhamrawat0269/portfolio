@@ -6,6 +6,7 @@ import Portfolio from "./organisms/Portfolio";
 import Card from "./molecules/Card";
 import Contact from "./organisms/Contact";
 import Footer from "./organisms/Footer";
+import ScrollToTopButton from "./atoms/ScrollToTopButton";
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   Card,
   Contact,
   Footer,
+  ScrollToTopButton,
 };
