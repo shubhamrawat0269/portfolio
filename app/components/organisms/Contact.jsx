@@ -14,9 +14,7 @@ const Contact = () => {
           }
         />
 
-        <div className="flex items-center justify-center">
-          <ContactForm />
-        </div>
+        <ContactForm />
       </div>
     </div>
   );

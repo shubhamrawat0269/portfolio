@@ -178,3 +178,54 @@ export const serviceCardData = [
       "Passionate about clean code, modern JavaScript, and scalable front-end architecture.",
   },
 ];
+
+export const portfolioCardData = [
+  {
+    imageUrl: "/work-1.png",
+    title: "Explore Nature",
+  },
+  {
+    imageUrl: "/work-2.png",
+    title: "Mountain Views",
+  },
+  {
+    imageUrl: "/work-3.png",
+    title: "City Nights",
+  },
+  {
+    imageUrl: "/work-4.png",
+    title: "City Nights",
+  },
+  {
+    imageUrl: "/work-1.png",
+    title: "Explore Nature",
+  },
+  {
+    imageUrl: "/work-2.png",
+    title: "Mountain Views",
+  },
+  {
+    imageUrl: "/work-3.png",
+    title: "City Nights",
+  },
+  {
+    imageUrl: "/work-4.png",
+    title: "City Nights",
+  },
+  {
+    imageUrl: "/work-1.png",
+    title: "Explore Nature",
+  },
+  {
+    imageUrl: "/work-2.png",
+    title: "Mountain Views",
+  },
+  {
+    imageUrl: "/work-3.png",
+    title: "City Nights",
+  },
+  {
+    imageUrl: "/work-4.png",
+    title: "City Nights",
+  },
+];
