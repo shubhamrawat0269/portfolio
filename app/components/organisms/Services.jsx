@@ -1,6 +1,5 @@
 import React from "react";
 import PrimaryInfo from "../atoms/PrimaryInfo";
-import { MoveRight } from "lucide-react";
 import { serviceCardData } from "@/assets/assets";
 
 const Services = () => {
@@ -24,11 +23,6 @@ const Services = () => {
               <div className="mb-4 text-[#bc6c25]">{card.icon}</div>
               <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
               <p className="text-gray-600 h-24">{card.description}</p>
-
-              <a href="#" className="text-base flex items-center gap-3 py-5">
-                Read More
-                <MoveRight size={20} />
-              </a>
             </div>
           ))}
         </div>
