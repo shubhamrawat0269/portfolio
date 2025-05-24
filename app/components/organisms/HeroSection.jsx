@@ -38,10 +38,12 @@ export default function HeroSection() {
               Connect with Me
             </button>
           </a>
-          <button className="bg-gray-800 order-1 md:order-2 text-white px-4 py-2 rounded-md md:rounded-full cursor-pointer flex items-center gap-2 hover:bg-gray-900 transition">
-            <FileText size={18} />
-            My Resume
-          </button>
+          <a href="/Resume.pdf" download="Resume.pdf">
+            <button className="bg-gray-800 order-1 md:order-2 text-white px-4 py-2 rounded-md md:rounded-full cursor-pointer flex items-center gap-2 hover:bg-gray-900 transition">
+              <FileText size={18} />
+              My Resume
+            </button>
+          </a>
         </div>
       </div>
     </section>
