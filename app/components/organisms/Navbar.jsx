@@ -30,7 +30,9 @@ const Navbar = () => {
       animate={isScrolled ? { opacity: 1, y: 0 } : { opacity: 0.9, y: 0 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
       className={`w-full fixed z-50 ${
-        isScrolled ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm" : ""
+        isScrolled
+          ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm transition-all duration-300 ease-in-sine"
+          : ""
       }`}
     >
       <nav className="max-w-screen-xl mx-auto p-3 flex items-center justify-between">
@@ -75,7 +77,7 @@ const Navbar = () => {
         <div className="absolute right-6 top-6" onClick={closeMenu}>
           <X size={24} color="white" />
         </div>
-          
+
         {menuItems.data.map((item, index) => {
           return (
             <li onClick={closeMenu} key={index}>
