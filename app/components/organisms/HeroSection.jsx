@@ -50,16 +50,16 @@ export default function HeroSection() {
           variants={fadeUp}
           className="flex flex-col md:flex-row items-center justify-center gap-4"
         >
-          <a href="#contact">
-            <button className="bg-[#bc6c25] order-2 md:order-1 text-white px-4 py-2 rounded-md md:rounded-full cursor-pointer flex items-center gap-2 hover:bg-[#611a00] transition">
-              <Mail size={18} />
-              Connect with Me
-            </button>
-          </a>
           <a href="/Resume.pdf" download="Resume.pdf">
             <button className="bg-gray-800 order-1 md:order-2 text-white px-4 py-2 rounded-md md:rounded-full cursor-pointer flex items-center gap-2 hover:bg-gray-900 transition">
               <FileText size={18} />
               My Resume
+            </button>
+          </a>
+          <a href="#contact">
+            <button className="bg-[#bc6c25] order-2 md:order-1 text-white px-4 py-2 rounded-md md:rounded-full cursor-pointer flex items-center gap-2 hover:bg-[#611a00] transition">
+              <Mail size={18} />
+              Connect with Me
             </button>
           </a>
         </motion.div>
