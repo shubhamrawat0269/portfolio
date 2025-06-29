@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import PrimaryInfo from "../atoms/PrimaryInfo";
-import { serviceCardData, serviceCardVariants } from "@/assets/assets";
+import { serviceCardData, cardVariants } from "@/assets/assets";
 
 const Services = () => {
   return (
@@ -22,7 +22,7 @@ const Services = () => {
             <motion.div
               key={index}
               custom={index}
-              variants={serviceCardVariants}
+              variants={cardVariants}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
