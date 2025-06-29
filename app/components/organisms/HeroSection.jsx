@@ -8,9 +8,9 @@ export default function HeroSection() {
   return (
     <section className="flex items-center justify-center bg-[#fefae0] px-4 py-28">
       <div className="text-center max-w-screen-md">
-        <div className="">
+        <div>
           <Image
-            src={assets.profile_img} // Make sure the image exists in /public folder
+            src={assets.profile_img}
             alt="Shubham Rawat"
             width={100}
             height={100}
