@@ -218,3 +218,18 @@ export const scaleUpIn = {
     transition: { duration: 0.4, delay: i * 0.2, ease: "easeOut" },
   }),
 };
+
+
+export const serviceCardVariants = {
+  hidden: { opacity: 0, scale: 0.9, y: 40 },
+  visible: (i) => ({
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.2,
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  }),
+};

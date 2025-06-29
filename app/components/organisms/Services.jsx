@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import PrimaryInfo from "../atoms/PrimaryInfo";
-import { serviceCardData } from "@/assets/assets";
+import { serviceCardData, serviceCardVariants } from "@/assets/assets";
 
 const Services = () => {
   return (
@@ -16,14 +19,19 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-3">
           {serviceCardData.map((card, index) => (
-            <div
+            <motion.div
               key={index}
+              custom={index}
+              variants={serviceCardVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
               className="flex flex-col p-6 bg-white border border-[#99582a] rounded-2xl shadow-md shadow-[#bc6c25] flex-1"
             >
               <div className="mb-4 text-[#bc6c25]">{card.icon}</div>
               <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
               <p className="text-gray-600 h-24">{card.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
