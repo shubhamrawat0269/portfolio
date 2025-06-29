@@ -35,12 +35,19 @@ import {
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 
+
+const about_me = `I am an experienced Frontend Developer with over 3 years of
+  professional expertise in the field. Throughout my career, I have
+  had the privilege of collaborating with prestigious organizations,
+  contributing to their success and growth.`;
+
 export const assets = {
   user_image,
   vscode,
   firebase,
   figma,
   git,
+  about_me,
   mongodb,
   right_arrow_white,
   logo,
@@ -170,7 +177,6 @@ export const portfolioCardData = [
   },
 ];
 
-
 export const containerVariants = {
   hidden: {},
   show: {
@@ -192,4 +198,23 @@ export const scaleIn = {
     scale: 1,
     transition: { duration: 0.5, ease: "easeOut" },
   },
+};
+
+export const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
+export const fadeInLeft = {
+  hidden: { opacity: 0, x: -60 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
+export const scaleUpIn = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: (i) => ({
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.4, delay: i * 0.2, ease: "easeOut" },
+  }),
 };
