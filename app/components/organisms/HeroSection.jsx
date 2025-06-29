@@ -1,14 +1,21 @@
 "use client";
 
-import { assets } from "@/assets/assets";
+import { assets, containerVariants, fadeUp, scaleIn } from "@/assets/assets";
 import { FileText, Mail } from "lucide-react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
     <section className="flex items-center justify-center bg-[#fefae0] px-4 py-28">
-      <div className="text-center max-w-screen-md">
-        <div>
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="show"
+        className="text-center max-w-screen-md"
+      >
+        {/* Profile Image */}
+        <motion.div variants={scaleIn}>
           <Image
             src={assets.profile_img}
             alt="Shubham Rawat"
@@ -16,22 +23,33 @@ export default function HeroSection() {
             height={100}
             className="rounded-full mx-auto"
           />
-        </div>
+        </motion.div>
 
-        <div>
+        {/* Text Content */}
+        <motion.div variants={fadeUp}>
           <h4 className="text-xl text-gray-600 my-2">
             Hi! I'm <span className="text-[#432818]">Shubham Rawat</span>
           </h4>
+        </motion.div>
+
+        <motion.div variants={fadeUp}>
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
             frontend web developer based in India.
           </h1>
+        </motion.div>
+
+        <motion.div variants={fadeUp}>
           <p className="text-gray-700 mb-6">
             I am a frontend developer from India, New Delhi with 3 years of
             experience in multiple companies like Webreinvent, EZ and Pepcoding.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+        {/* Buttons */}
+        <motion.div
+          variants={fadeUp}
+          className="flex flex-col md:flex-row items-center justify-center gap-4"
+        >
           <a href="#contact">
             <button className="bg-[#bc6c25] order-2 md:order-1 text-white px-4 py-2 rounded-md md:rounded-full cursor-pointer flex items-center gap-2 hover:bg-[#611a00] transition">
               <Mail size={18} />
@@ -44,8 +62,8 @@ export default function HeroSection() {
               My Resume
             </button>
           </a>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
