@@ -5,7 +5,6 @@ const Card = ({ imageUrl, title, onClick }) => {
   return (
     <div
       className="relative w-full h-64 rounded-2xl overflow-hidden shadow-lg group"
-      //   onClick={onClick}
     >
       <img
         src={imageUrl}
@@ -14,7 +13,10 @@ const Card = ({ imageUrl, title, onClick }) => {
       />
       <div className="absolute inset-0 bg-black/40" />
 
-      <div className="bg-white cursor-pointer w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+      <div
+        onClick={onClick}
+        className="bg-white cursor-pointer w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
+      >
         <div>
           <h2 className="text-xs">Frontend Project</h2>
           <p className="text-base font-semibold">{title}</p>

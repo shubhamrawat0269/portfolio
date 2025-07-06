@@ -10,8 +10,10 @@ import {
   cardVariants,
   portfolioCardData,
 } from "@/assets/assets";
+import { useRouter } from "next/navigation";
 
 const Portfolio = () => {
+  const router = useRouter();
   const [limit, setLimit] = useState(4);
   const handleLimit = () => setLimit(limit + 4);
 
@@ -39,13 +41,13 @@ const Portfolio = () => {
               <Card
                 imageUrl={card.imageUrl}
                 title={card.title}
-                onClick={() => alert(`${card.title} clicked!`)}
+                onClick={() => router.push(card.link)}
               />
             </motion.div>
           ))}
         </div>
       </div>
-      
+
       <motion.div
         variants={buttonVariant}
         initial="hidden"

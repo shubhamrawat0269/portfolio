@@ -128,52 +128,34 @@ export const serviceCardData = [
 
 export const portfolioCardData = [
   {
+    link: "https://kali-draw.vercel.app/",
     imageUrl: "/work-1.png",
-    title: "Explore Nature",
+    title: "kali Draw",
   },
   {
+    link: "https://rawatshubham-qtify-pyyp.vercel.app/",
     imageUrl: "/work-2.png",
-    title: "Mountain Views",
+    title: "Qtify App",
   },
   {
+    link: "https://medify-indol.vercel.app/",
     imageUrl: "/work-3.png",
-    title: "City Nights",
+    title: "Medical App",
   },
   {
+    link: "https://pokeswibe.vercel.app/",
     imageUrl: "/work-4.png",
-    title: "City Nights",
+    title: "Pokeswibe",
   },
   {
+    link: "https://caption-to-video-app.vercel.app/",
     imageUrl: "/work-1.png",
-    title: "Explore Nature",
+    title: "Caption To Video",
   },
   {
+    link: "https://countdown-timer-app-jade.vercel.app/",
     imageUrl: "/work-2.png",
-    title: "Mountain Views",
-  },
-  {
-    imageUrl: "/work-3.png",
-    title: "City Nights",
-  },
-  {
-    imageUrl: "/work-4.png",
-    title: "City Nights",
-  },
-  {
-    imageUrl: "/work-1.png",
-    title: "Explore Nature",
-  },
-  {
-    imageUrl: "/work-2.png",
-    title: "Mountain Views",
-  },
-  {
-    imageUrl: "/work-3.png",
-    title: "City Nights",
-  },
-  {
-    imageUrl: "/work-4.png",
-    title: "City Nights",
+    title: "Countdown Timer",
   },
 ];
 
