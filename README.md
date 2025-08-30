@@ -1,4 +1,2 @@
-# Pending task list : 
-- 1. My Image Update.
-- 2. Resume download feature.
-- 
+# What more I can do to improve my resume : 
+- 1. Add Testimonials or Testimonials Slider

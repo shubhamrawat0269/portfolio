@@ -1,4 +1,4 @@
-import user_image from "./user-image.png";
+import user_image from "./infographic.png";
 import vscode from "./vscode.png";
 import firebase from "./firebase.png";
 import figma from "./figma.png";

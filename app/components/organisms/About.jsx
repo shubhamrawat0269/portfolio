@@ -27,8 +27,8 @@ const About = () => {
           <Image
             src={assets.user_image}
             alt="Profile"
-            width={600}
-            height={350}
+            width={750}
+            height={400}
             className="object-cover shadow-lg"
           />
         </motion.div>
