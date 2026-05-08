@@ -6,6 +6,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
+  const yearsOfExperience = 4;
+
   return (
     <section className="flex items-center justify-center bg-[#fefae0] px-4 py-28">
       <motion.div
@@ -34,14 +36,15 @@ export default function HeroSection() {
 
         <motion.div variants={fadeUp}>
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
-            frontend web developer based in India.
+            Frontend Web Developer Based In India.
           </h1>
         </motion.div>
 
         <motion.div variants={fadeUp}>
           <p className="text-gray-700 mb-6">
-            I am a frontend developer from India, New Delhi with 3 years of
-            experience in multiple companies like Webreinvent, EZ and Pepcoding.
+            I am a frontend developer from India, New Delhi with{" "}
+            {yearsOfExperience} years of experience in multiple companies like
+            Webreinvent, EZ and Pepcoding.
           </p>
         </motion.div>
 
