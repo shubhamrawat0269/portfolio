@@ -2,11 +2,10 @@
 Navbar
 Hero Section
 Featured Projects
-About Me
-Skills [Not Implemented Yet]
-Case Studies [Not Implemented Yet]
 Experience / Certifications [Not Implemented Yet]
-Testimonials [Not Implemented Yet]
+Skills [Not Implemented Yet]
+About Me / My Story [Not Implemented Yet]
+Case Studies [Not Implemented Yet]
 Contact
 Footer
 
