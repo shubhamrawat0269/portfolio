@@ -10,11 +10,16 @@ import menuItems from "@/app/shared/json/menu-items.json";
 const Navbar = () => {
   const sideMenuRef = useRef();
   const [isScrolled, setScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const openMenu = () =>
-    (sideMenuRef.current.style.transform = "translateX(-100%)");
-  const closeMenu = () =>
-    (sideMenuRef.current.style.transform = "translateX(100%)");
+  const openMenu = () => {
+    setIsMenuOpen(true);
+    sideMenuRef.current.style.transform = "translateY(0%)";
+  };
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    sideMenuRef.current.style.transform = "translateY(-100%)";
+  };
 
   // Improvement : we should be cleaning scroll event listener in useEffect
   useEffect(() => {
@@ -68,10 +73,18 @@ const Navbar = () => {
           </button>
         </div>
       </nav>
+      {/* overlay */}
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/30 bg-opacity-50 z-40"
+          onClick={closeMenu}
+        ></div>
+      )}
       {/* menu items mobile  */}
       <ul
         ref={sideMenuRef}
-        className="flex md:hidden flex-col gap-4 py-20 px-10 fixed top-0 bottom-0 -right-full w-full z-50  h-screen bg-[#bc6c25] transition duration-500"
+        style={{ transform: "translateY(-100%)" }}
+        className="flex md:hidden flex-col gap-4 py-10 px-10 fixed top-0 left-0 right-0 w-full h-auto rounded-bl-xl rounded-br-xl z-50 bg-[#c46410] transition duration-500"
       >
         <div className="absolute right-6 top-6" onClick={closeMenu}>
           <X size={24} color="white" />
