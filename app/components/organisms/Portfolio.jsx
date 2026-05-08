@@ -21,10 +21,10 @@ const Portfolio = () => {
     <div id="work" className="py-14">
       <div className="max-w-sm sm:max-w-md md:max-w-screen-xl mx-auto">
         <PrimaryInfo
-          heading={"My Portfolio"}
+          heading={"My Projects"}
           subHeading={"My Latest Work"}
           para={
-            "Welcome to my web development portfolio. Explore the collection of projects showcasing  my expertise in frontend development"
+            "Welcome to my projects section. Explore the collection of projects showcasing  my expertise in frontend development"
           }
         />
 
@@ -48,7 +48,7 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <motion.div
+      {/* <motion.div
         variants={buttonVariant}
         initial="hidden"
         whileInView="visible"
@@ -64,7 +64,7 @@ const Portfolio = () => {
             <ArrowRight size={20} />
           </button>
         )}
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

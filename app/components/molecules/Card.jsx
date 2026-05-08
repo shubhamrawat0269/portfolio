@@ -18,7 +18,7 @@ const Card = ({ imageUrl, title, onClick }) => {
         className="bg-white cursor-pointer w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
       >
         <div>
-          <h2 className="text-xs">Frontend Project</h2>
+          <h2 className="text-xs">Full Stack Project</h2>
           <p className="text-base font-semibold">{title}</p>
         </div>
         <button className="bg-white text-black p-2 rounded-full cursor-pointer hover:bg-gray-100 transition">

@@ -35,7 +35,6 @@ import {
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 
-
 const about_me = `I am an experienced Frontend Developer with over 3 years of
   professional expertise in the field. Throughout my career, I have
   had the privilege of collaborating with prestigious organizations,
@@ -128,34 +127,18 @@ export const serviceCardData = [
 
 export const portfolioCardData = [
   {
-    link: "https://kali-draw.vercel.app/",
+    link: "https://kira-frontend-liart.vercel.app/",
     imageUrl: "/work-1.png",
-    title: "kali Draw",
+    title: "TaskFlow",
+    description:
+      "Task management system with drag-and-drop, real-time collaboration, and responsive layout.",
   },
   {
-    link: "https://rawatshubham-qtify-pyyp.vercel.app/",
+    link: "https://ourtube-olive.vercel.app/",
     imageUrl: "/work-2.png",
-    title: "Qtify App",
-  },
-  {
-    link: "https://medify-indol.vercel.app/",
-    imageUrl: "/work-3.png",
-    title: "Medical App",
-  },
-  {
-    link: "https://pokeswibe.vercel.app/",
-    imageUrl: "/work-4.png",
-    title: "Pokeswibe",
-  },
-  {
-    link: "https://caption-to-video-app.vercel.app/",
-    imageUrl: "/work-1.png",
-    title: "Caption To Video",
-  },
-  {
-    link: "https://countdown-timer-app-jade.vercel.app/",
-    imageUrl: "/work-2.png",
-    title: "Countdown Timer",
+    title: "EcoCart",
+    description:
+      "E-commerce platform promoting eco-friendly products with payment integration.",
   },
 ];
 

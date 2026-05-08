@@ -14,12 +14,12 @@ export default function Home() {
     <>
       <Navbar />
       <HeroSection />
+      <Portfolio />
       {/* <About /> */}
       {/* <Services /> */}
-      {/* <Portfolio /> */}
       {/* <Contact /> */}
       {/* <Footer /> */}
-      {/* <ScrollToTopButton /> */}
+      <ScrollToTopButton />
     </>
   );
 }
