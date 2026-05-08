@@ -35,11 +35,11 @@ const Navbar = () => {
           : ""
       }`}
     >
-      <nav className="max-w-screen-xl mx-auto p-3 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto p-3 flex items-center justify-between">
         <a href="#top">
           <Image
             src={assets.logo}
-            className="w-52 cursor-pointer mr-14"
+            className="w-52 cursor-pointer"
             alt={assets.logo}
           />
         </a>
@@ -59,10 +59,9 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <a
             href="#contact"
-            className="hidden lg:flex items-center gap-3 px-5 py-1.5 border border-gray-500 rounded-full ml-5"
+            className="hidden md:flex items-center gap-3 p-2 px-3 text-amber-50 bg-[#bc6c25]"
           >
             Contact
-            <ArrowUpRight />
           </a>
           <button className="block md:hidden ml-3" onClick={openMenu}>
             <Menu />
