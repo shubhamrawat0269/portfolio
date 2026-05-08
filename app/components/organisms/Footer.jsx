@@ -1,5 +1,5 @@
 import { assets } from "@/assets/assets";
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -13,6 +13,10 @@ const Footer = () => {
           </a>
 
           <div className="flex items-center gap-2">
+            <Phone size={18} />
+            9711071504
+          </div>
+          <div className="flex items-center gap-2">
             <Mail size={18} />
             rawatshubam269@gmail.com
           </div>
@@ -20,7 +24,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-300 px-4 py-3 flex justify-between items-center text-xs md:text-sm text-gray-700">
           <p>© 2025 Shubham Rawat, all rights reserved.</p>
-          <p>Connect with me</p>
+          <p>Connect with me : 9711071504</p>
         </div>
       </div>
     </footer>

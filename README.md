@@ -1,10 +1,10 @@
 # Recommended Portfolio Structure
-Navbar
-Hero Section
-Featured Projects
+Navbar ✅ 
+Hero Section ✅ 
+Featured Projects ✅
+About Me / My Story ✅
+Skills 
 Experience / Certifications [Not Implemented Yet]
-Skills [Not Implemented Yet]
-About Me / My Story [Not Implemented Yet]
 Case Studies [Not Implemented Yet]
 Contact
 Footer

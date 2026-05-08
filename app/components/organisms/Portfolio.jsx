@@ -20,13 +20,7 @@ const Portfolio = () => {
   return (
     <div id="work" className="py-14">
       <div className="max-w-sm sm:max-w-md md:max-w-screen-xl mx-auto">
-        <PrimaryInfo
-          heading={"My Projects"}
-          subHeading={"My Latest Work"}
-          para={
-            "Welcome to my projects section. Explore the collection of projects showcasing  my expertise in frontend development"
-          }
-        />
+        <PrimaryInfo heading={"Selected Projects"} subHeading={"My Latest Work"} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-3">
           {portfolioCardData.slice(0, limit).map((card, index) => (
