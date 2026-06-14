@@ -21,7 +21,7 @@ const About = () => {
           heading={"About Me"}
           subHeading={"Less robotic, more real."}
         />
-        <div className="flex gap-20 items-center w-[500px] mr-20 pr-20">
+        <div className="flex gap-20 items-center mr-20 pr-20">
           <motion.div
             variants={fadeInUp}
             initial="hidden"

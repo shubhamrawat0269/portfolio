@@ -1,5 +1,6 @@
 import { Outfit,Ovo } from "next/font/google";
 import "./globals.css";
+import CustomCursor from "./components/CustomCursor";
 
 const outfit = Outfit({
   subsets: ["latin"], 
@@ -20,8 +21,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${outfit.className} ${ovo.className} antialiased bg-[#131313]`}
+        className={`${outfit.className} ${ovo.className} antialiased bg-[#131313] cursor-none`}
       >
+        <CustomCursor />
         {children}
       </body>
     </html>
