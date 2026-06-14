@@ -1,6 +1,6 @@
 import { Outfit,Ovo } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "./components/CustomCursor";
+import CustomCursor from "./components/organisms/CustomCursor";
 
 const outfit = Outfit({
   subsets: ["latin"], 

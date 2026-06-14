@@ -6,7 +6,7 @@ import { assets, containerVariants, fadeUp, scaleIn } from "@/assets/assets";
 
 export default function HeroSection() {
   return (
-    <section className="flex items-center justify-center px-4 py-28">
+    <section className="flex items-center justify-center px-4 pt-28 pb-8">
       <motion.div
         variants={containerVariants}
         initial="hidden"

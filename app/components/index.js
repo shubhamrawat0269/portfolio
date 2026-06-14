@@ -6,6 +6,7 @@ import Portfolio from "./organisms/Portfolio";
 import Card from "./molecules/Card";
 import Contact from "./organisms/Contact";
 import Footer from "./organisms/Footer";
+import GithubActivity from "./organisms/GithubActivity";
 import ScrollToTopButton from "./atoms/ScrollToTopButton";
 
 export {
@@ -17,5 +18,6 @@ export {
   Card,
   Contact,
   Footer,
+  GithubActivity,
   ScrollToTopButton,
 };

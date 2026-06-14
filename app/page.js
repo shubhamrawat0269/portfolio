@@ -3,6 +3,7 @@ import {
   Contact,
   HeroSection,
   Navbar,
+  GithubActivity,
   Portfolio,
   Services,
   Footer,
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <Navbar />
       <HeroSection />
+      <GithubActivity />
       {/* <Portfolio /> */}
       <About />
       {/* <Services /> */}
