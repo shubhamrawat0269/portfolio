@@ -1,15 +1,18 @@
 # Recommended Portfolio Structure
-Navbar ✅ 
-Hero Section ✅ 
-Featured Projects ✅
-About Me / My Story ✅
-Skills 
-Experience / Certifications [Not Implemented Yet]
-Case Studies [Not Implemented Yet]
-Contact
-Footer
+1. Navbar
+2. Hero Page
+3. Github Activity
+4. About
+5. My Story
+6. Banner Detail ~ Project, YearsOfExp, Project Shipped
+7. Beyond the Code
+8. Career Section
+9. Proof Of Work
+10. Contact
+11. Footer Section
 
 
 
-# What I can do to improve my resume : 
-- 1. 
+
+# Features to work on : 
+1. Animated Cursor
