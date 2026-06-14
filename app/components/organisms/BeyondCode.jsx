@@ -30,6 +30,7 @@ export default function BeyondCode() {
 
   return (
     <section className={styles.wrapper}>
+      <div className={styles.wrapperContent}>
       <div className={styles.heading}>
         <span />
         <p>BEYOND THE CODE</p>
@@ -56,6 +57,7 @@ export default function BeyondCode() {
         </div>
 
         <ContactLinks />
+      </div>
       </div>
     </section>
   );
