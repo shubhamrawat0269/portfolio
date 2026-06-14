@@ -1,20 +1,17 @@
 "use client";
-
-import { assets, containerVariants, fadeUp, scaleIn } from "@/assets/assets";
-import { FileText, Mail } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { FileText, Mail } from "lucide-react";
+import { assets, containerVariants, fadeUp, scaleIn } from "@/assets/assets";
 
 export default function HeroSection() {
-  const yearsOfExperience = 4;
-
   return (
-    <section className="flex items-center justify-center bg-[#fefae0] px-4 py-28">
+    <section className="flex items-center justify-center px-4 py-28">
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="show"
-        className="text-center max-w-screen-md"
+        className="text-center max-w-screen-lg"
       >
         {/* Profile Image */}
         <motion.div variants={scaleIn}>
@@ -29,42 +26,36 @@ export default function HeroSection() {
 
         {/* Text Content */}
         <motion.div variants={fadeUp}>
-          <h4 className="text-xl text-gray-600 my-2">
-            Hi! I'm <span className="text-[#432818]">Shubham Rawat</span>
-          </h4>
-        </motion.div>
-
-        <motion.div variants={fadeUp}>
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">
-            Frontend Web Developer Based In India.
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl flex flex-col gap-2 text-[#bcbaba] py-4 font-bold">
+            <span>
+              Hi, I'm <span className="text-[#365398]">Shubham</span>
+            </span>
+            <span>I build for the web.</span>
           </h1>
         </motion.div>
 
         <motion.div variants={fadeUp}>
-          <p className="text-gray-700 mb-6">
-            I am a frontend developer from India, New Delhi with{" "}
-            {yearsOfExperience} years of experience in multiple companies like
-            Webreinvent, EZ and Pepcoding.
-          </p>
+          <h2 className="text-xl font-bold text-[#bcbaba] py-2">
+            Building intuitive UIs and AI-driven tools with a sharp eye for
+            craft.
+          </h2>
         </motion.div>
 
         {/* Buttons */}
         <motion.div
           variants={fadeUp}
-          className="flex flex-col md:flex-row items-center justify-center gap-4"
+          className="flex flex-col md:flex-row items-center justify-center gap-4 py-4"
         >
-          <a href="/Resume.pdf" download="Resume.pdf">
-            <button className="bg-gray-800 order-1 md:order-2 text-white px-4 py-2 rounded-md md:rounded-full cursor-pointer flex items-center gap-2 hover:bg-gray-900 transition">
-              <FileText size={18} />
-              My Resume
-            </button>
-          </a>
           <a href="#contact">
-            <button className="bg-[#bc6c25] order-2 md:order-1 text-white px-4 py-2 rounded-md md:rounded-full cursor-pointer flex items-center gap-2 hover:bg-[#611a00] transition">
+            <button className="bg-[#365398] order-2 md:order-1 text-white px-4 py-2 rounded-md cursor-pointer flex items-center gap-2 hover:bg-[#1550da] transition">
               <Mail size={18} />
               Connect with Me
             </button>
           </a>
+          <button className="bg-transparent order-1 md:order-2 text-white px-4 py-2 rounded-md cursor-pointer flex items-center gap-2 border-2 border-gray-700 hover:bg-gray-900 transition">
+            <FileText size={18} />
+            View My Work
+          </button>
         </motion.div>
       </motion.div>
     </section>

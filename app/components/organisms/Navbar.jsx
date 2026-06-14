@@ -43,9 +43,9 @@ const Navbar = () => {
           </h1>
         </a>
         <ul
-          className={`hidden md:flex items-center gap-6 lg:gap-8 px-12 py-3 text-[#b1b1b1] ${
-            isScrolled ? "" : "shadow-sm bg-opacity-50"
-          }`}
+          className={
+            "hidden md:flex items-center gap-6 lg:gap-8 px-12 py-3 text-[#b1b1b1]"
+          }
         >
           {menuItems.data.map((item, index) => {
             return (
