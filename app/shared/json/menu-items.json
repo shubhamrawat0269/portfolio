@@ -1,19 +1,19 @@
 {
   "data": [
     {
-      "title": "Home",
-      "href": "#top"
-    },
-    {
-      "title": "About me",
+      "title": "About",
       "href": "#about"
     },
     {
-      "title": "Services",
+      "title": "Experience",
+      "href": "#about"
+    },
+    {
+      "title": "Project",
       "href": "#services"
     },
     {
-      "title": "My Work",
+      "title": "Contact",
       "href": "#work"
     }
   ]

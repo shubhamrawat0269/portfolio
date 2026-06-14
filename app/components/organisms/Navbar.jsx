@@ -1,8 +1,5 @@
 "use client";
-import Image from "next/image";
-import { assets } from "@/assets/assets";
-
-import { X, ArrowUpRight, Menu } from "lucide-react";
+import { X, Menu } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import menuItems from "@/app/shared/json/menu-items.json";
@@ -21,7 +18,6 @@ const Navbar = () => {
     sideMenuRef.current.style.transform = "translateY(-100%)";
   };
 
-  // Improvement : we should be cleaning scroll event listener in useEffect
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
 
@@ -40,22 +36,23 @@ const Navbar = () => {
           : ""
       }`}
     >
-      <nav className="max-w-7xl mx-auto p-3 flex items-center justify-between">
+      <nav className="max-w-[1560px] mx-auto p-3 flex items-center justify-between">
         <a href="#top">
-          <Image
-            src={assets.logo}
-            className="w-52 cursor-pointer"
-            alt={assets.logo}
-          />
+          <h1 className="text-xl text-[#dcdcdc] font-semibold">
+            Shubham Rawat
+          </h1>
         </a>
         <ul
-          className={`hidden md:flex items-center gap-6 lg:gap-8  rounded-full px-12 py-3 ${
-            isScrolled ? "" : "shadow-sm bg-opacity-50 bg-white"
+          className={`hidden md:flex items-center gap-6 lg:gap-8 px-12 py-3 text-[#b1b1b1] ${
+            isScrolled ? "" : "shadow-sm bg-opacity-50"
           }`}
         >
           {menuItems.data.map((item, index) => {
             return (
-              <li key={index}>
+              <li
+                key={index}
+                className="hover:text-[#ffffff] transition-colors"
+              >
                 <a href={item.href}>{item.title}</a>
               </li>
             );
@@ -64,11 +61,14 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <a
             href="#contact"
-            className="hidden md:flex items-center gap-3 p-2 px-3 text-amber-50 bg-[#bc6c25]"
+            className="hidden md:flex items-center gap-3 p-1 px-4 rounded-md bg-[#adc6ff] text-[#365398]"
           >
-            Contact
+            Hire Me
           </a>
-          <button className="block md:hidden ml-3" onClick={openMenu}>
+          <button
+            className="block md:hidden ml-3 text-[#adc6ff]"
+            onClick={openMenu}
+          >
             <Menu />
           </button>
         </div>
@@ -84,21 +84,31 @@ const Navbar = () => {
       <ul
         ref={sideMenuRef}
         style={{ transform: "translateY(-100%)" }}
-        className="flex md:hidden flex-col gap-4 py-10 px-10 fixed top-0 left-0 right-0 w-full h-auto rounded-bl-xl rounded-br-xl z-50 bg-[#c46410] transition duration-500"
+        className="flex md:hidden flex-col gap-4 p-8 fixed top-0 left-0 right-0 w-full h-auto rounded-bl-xl rounded-br-xl z-50 bg-[#100f0f] transition duration-500"
       >
-        <div className="absolute right-6 top-6" onClick={closeMenu}>
-          <X size={24} color="white" />
+        <div className="absolute right-3 top-2.5" onClick={closeMenu}>
+          <X size={24} color="#adc6ff" />
         </div>
 
         {menuItems.data.map((item, index) => {
           return (
             <li onClick={closeMenu} key={index}>
-              <a href={item.href} className="text-[#fefae0] text-xl">
+              <a
+                href={item.href}
+                className="text-[#b1b1b1] hover:text-[#ffffff] transition-colors"
+              >
                 {item.title}
               </a>
             </li>
           );
         })}
+
+        <a
+          href="#contact"
+          className="inline w-24 p-1 px-4 rounded-md text-center bg-[#adc6ff] text-[#365398]"
+        >
+          Hire Me
+        </a>
       </ul>
     </motion.div>
   );
