@@ -1,27 +1,18 @@
 "use client";
-
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  assets,
-  cardData,
-  fadeInLeft,
-  fadeInUp,
-  scaleUpIn,
-  toolsData,
-} from "@/assets/assets";
+import { fadeInUp } from "@/assets/assets";
 import PrimaryInfo from "../atoms/PrimaryInfo";
 
 const About = () => {
   return (
     <section id="about" className="pb-10 max-w-[1560px] mx-auto p-3">
-      <div className="flex flex-col md:flex-row justify-between gap-20">
+      <div className="flex flex-col md:flex-row justify-between gap-5 md:gap-20">
         <PrimaryInfo
           heading={"About Me"}
           subHeading={"Less robotic, more real."}
         />
-        <div className="flex gap-20 items-center mr-20 pr-20">
+        <div className="flex gap-20 items-center md:mr-20 md:pr-20">
           <motion.div
             variants={fadeInUp}
             initial="hidden"

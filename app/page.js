@@ -5,6 +5,7 @@ import {
   Navbar,
   GithubActivity,
   JourneySection,
+  StatsBar,
   Portfolio,
   Services,
   Footer,
@@ -19,6 +20,7 @@ export default function Home() {
       <GithubActivity />
       <About />
       <JourneySection />
+      <StatsBar />
       {/* <Services /> */}
       {/* <Contact /> */}
       {/* <Footer /> */}
