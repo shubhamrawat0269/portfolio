@@ -35,10 +35,9 @@ import {
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 
-const about_me = `I am an experienced Frontend Developer with over 3 years of
-  professional expertise in the field. Throughout my career, I have
-  had the privilege of collaborating with prestigious organizations,
-  contributing to their success and growth.`;
+const about_me = `Hi there! I'm Shubham, and if you've made it here, you probably know I build for the web. But let's make this less robotic and more real.
+This website exists to show what I do, what I love, and maybe even help you get to know me a little better. I thrive in fast-paced environments because, honestly, slow just isn't my thing.
+This is my little corner of the internet; if you like what you see, feel free to reach out. Let's build something awesome.`;
 
 export const assets = {
   user_image,
@@ -70,25 +69,6 @@ export const assets = {
   right_arrow_bold,
   right_arrow_bold_dark,
 };
-
-export const cardData = [
-  {
-    icon: <Code size={40} />,
-    title: "Frontend Dev",
-    description: "Building seamless and responsive UIs with modern frameworks.",
-  },
-  {
-    icon: <Monitor size={40} />,
-    title: "UI/UX Enthusiast",
-    description:
-      "Passionate about creating intuitive, responsive, & visually appealing web applications.",
-  },
-  {
-    icon: <BrainCog size={40} />,
-    title: "Creative Thinker",
-    description: "Designing with a balance of functionality and aesthetics.",
-  },
-];
 
 export const toolsData = [
   assets.vscode,
