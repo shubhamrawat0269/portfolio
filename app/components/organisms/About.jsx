@@ -2,17 +2,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/assets/assets";
-import PrimaryInfo from "../atoms/PrimaryInfo";
 
 const About = () => {
   return (
-    <section id="about" className="pb-10 max-w-[1560px] mx-auto p-3">
+    <section id="about" className="pb-10 max-w-screen-xl mx-auto p-3">
       <div className="flex flex-col md:flex-row justify-between gap-5 md:gap-20">
-        <PrimaryInfo
-          heading={"About Me"}
-          subHeading={"Less robotic, more real."}
-        />
-        <div className="flex gap-20 items-center md:mr-20 md:pr-20">
+        <div className="">
+          <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#7284c7]">
+            About Me
+          </p>
+          <h2 className="text-4xl font-bold text-white md:text-5xl">
+            Less robotic, more real.
+          </h2>
+        </div>
+        <div className="flex gap-20 items-center">
           <motion.div
             variants={fadeInUp}
             initial="hidden"

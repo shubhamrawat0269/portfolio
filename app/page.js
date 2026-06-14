@@ -6,6 +6,7 @@ import {
   GithubActivity,
   JourneySection,
   StatsBar,
+  BeyondCode,
   Portfolio,
   Services,
   Footer,
@@ -21,6 +22,7 @@ export default function Home() {
       <About />
       <JourneySection />
       <StatsBar />
+      <BeyondCode />
       {/* <Services /> */}
       {/* <Contact /> */}
       {/* <Footer /> */}

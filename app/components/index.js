@@ -10,6 +10,7 @@ import StatsBar from "./organisms/StatsBar";
 import JourneySection from "./organisms/Story";
 import GithubActivity from "./organisms/GithubActivity";
 import ScrollToTopButton from "./atoms/ScrollToTopButton";
+import BeyondCode from "./organisms/BeyondCode";
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   JourneySection,
   GithubActivity,
   ScrollToTopButton,
+  BeyondCode,
 };
