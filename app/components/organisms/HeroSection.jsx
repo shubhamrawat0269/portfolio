@@ -20,7 +20,7 @@ export default function HeroSection() {
             alt="Shubham Rawat"
             width={100}
             height={100}
-            className="rounded-full mx-auto"
+            className="rounded-full mx-auto my-4"
           />
         </motion.div>
 
@@ -44,7 +44,7 @@ export default function HeroSection() {
         {/* Buttons */}
         <motion.div
           variants={fadeUp}
-          className="flex flex-col md:flex-row items-center justify-center gap-4 py-4"
+          className="flex flex-col md:flex-row items-center justify-center gap-4 py-10"
         >
           <a href="#contact">
             <button className="bg-[#365398] order-2 md:order-1 text-white px-4 py-2 rounded-md cursor-pointer flex items-center gap-2 hover:bg-[#1550da] transition">
