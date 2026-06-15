@@ -2,88 +2,112 @@
   "experiences": [
     {
       "id": 1,
-      "company": "Vectorshift",
-      "role": "Frontend Engineer",
-      "period": "Jan 2025 — present",
-      "duration": "NEW",
-      "location": "REMOTE",
+      "company": "WebReinvent Technologies",
+      "role": "Senior Software Developer",
+      "period": "Aug 2024 — Jun 2026",
+      "duration": "2 yr",
+      "location": "HYBRID",
       "tags": [
         "REACT",
         "TYPESCRIPT",
-        "WEBSOCKETS",
-        "ZUSTAND",
+        "NEXT.JS",
+        "REDUX",
         "TAILWIND CSS",
-        "FASTAPI"
+        "ECOMMERCE",
+        "PERFORMANCE OPTIMIZATION",
+        "MICROSERVICES"
       ],
       "achievements": [
-        "Generalized 100+ unique node types into a single config-driven system, eliminating per-node boilerplate and making additions a one-liner",
-        "Built an agentic chatbot UI supporting 1,000+ message conversations with sub-100ms interaction times via virtualized rendering and incremental state updates",
-        "Developed real-time analytics dashboards showing pipeline execution metrics, latency breakdowns, and error traces",
-        "Owned the Marketplace frontend end-to-end — browse, preview, fork, and deploy community templates — driving 40%+ template adoption among new users"
+        "Delivered and enhanced critical customer-facing features for the Toolstation e-commerce platform across product listing, product detail, cart, checkout, and account management modules",
+        "Improved frontend performance through lazy loading, code splitting, caching strategies, and optimized rendering techniques",
+        "Led implementation of reusable UI components and shared design patterns, improving consistency across the platform",
+        "Collaborated with product managers, UX designers, QA engineers, and backend teams to deliver business-critical releases",
+        "Implemented scalable API integration patterns and state management solutions that improved application reliability and maintainability",
+        "Contributed to code reviews, technical discussions, and mentoring activities, helping establish frontend best practices within the team",
+        "Participated in production support and issue resolution, ensuring high availability and a seamless customer experience"
       ],
       "learnings": [
-        "Config-driven UI architecture scales dramatically better than component-per-feature as a product grows",
-        "Performance in chat UIs is non-negotiable — virtualization and incremental appending are table stakes at scale",
-        "Thinking about system architecture before touching code saves far more time than any refactor ever can",
-        "Owning a complete product surface (Marketplace) taught me how to reason in user flows, not just components",
-        "YC-backed startups move at a pace that forces you to be comfortable shipping 80% solutions and iterating fast"
+        "Large-scale e-commerce systems require continuous focus on performance, scalability, and user experience",
+        "Business impact should guide technical decisions, especially for conversion-critical customer journeys",
+        "Reusable architectures and shared component systems reduce maintenance costs and accelerate delivery",
+        "Monitoring, observability, and analytics are essential for maintaining application health in production",
+        "Effective stakeholder communication is as important as technical execution when delivering enterprise solutions",
+        "Balancing technical excellence with delivery timelines is a key skill for senior engineers"
       ],
-      "feedback": "Praised for moving fast without sacrificing code quality, and for proactively improving DX across the codebase with shared abstractions.",
-      "highlight": "Led the frontend revamp of a no-code AI workflow builder used by teams to build and deploy AI pipelines without writing code.",
-      "type": "current"
+      "feedback": "Recognized for technical ownership, high-quality delivery, problem-solving capabilities, and proactive contributions to engineering standards and team collaboration.",
+      "highlight": "Played a significant role in enhancing the Toolstation e-commerce platform, delivering scalable and performant frontend solutions that improved customer experience and supported business growth.",
+      "type": "previous"
     },
     {
       "id": 2,
-      "company": "Perman AI",
-      "role": "Founding Frontend Engineer",
-      "period": "Apr 2023 — Dec 2024",
-      "duration": "1yr 8 mo",
-      "location": "REMOTE",
+      "company": "Mobilous",
+      "role": "Frontend Developer",
+      "period": "June 2023 — July 2024",
+      "duration": "1 yr 2 mo",
+      "location": "ON-SITE",
       "tags": [
         "REACT",
-        "NEXT.JS",
         "TYPESCRIPT",
-        "LEXICAL",
-        "TAILWIND",
-        "NODE.JS"
+        "NEXT.JS",
+        "ZUSTAND",
+        "TAILWIND CSS",
+        "NODEJS",
+        "LOW CODE",
+        "NO CODE"
       ],
       "achievements": [
-        "Built a Framer-like drag-and-drop website builder with AI-driven creation and editing — every layout, component, and style was configurable via a custom property panel",
-        "Designed and implemented a high-performance SSR/edge renderer that served published websites with near-instant load times and perfect Core Web Vitals",
-        "Built an AI-powered blog editor on top of Lexical with real-time AI suggestions, inline rewrites, and SEO scoring",
-        "Established the entire frontend architecture: monorepo, shared design system, CI/CD pipeline, and review conventions"
+        "Developed a no-code platform that enabled users to create and configure applications through visual interfaces without writing code",
+        "Built dynamic form builders, drag-and-drop interfaces, and configuration-driven UI systems to support rapid application creation",
+        "Designed reusable component frameworks that reduced implementation effort and accelerated onboarding of new features",
+        "Integrated real-time validation, workflow automation, and configurable business rules into the platform",
+        "Collaborated with backend teams to create scalable APIs supporting application generation and deployment workflows",
+        "Contributed to platform architecture decisions that improved maintainability and future scalability"
       ],
       "learnings": [
-        "Building a no-code builder forces you to deeply understand how component trees, layout systems, and state machines actually work",
-        "Being a founding engineer means your decisions compound — bad abstractions early cost weeks later",
-        "SSR and edge rendering require thinking about data fetching, caching, and hydration as first-class concerns, not afterthoughts",
-        "Working directly with founders teaches you to think from a product lens, not just a dev lens — understanding the why behind every feature changes the quality of your decisions"
+        "Configuration-driven architectures are highly effective for building scalable no-code and low-code platforms",
+        "Creating flexible systems requires balancing customization capabilities with simplicity and maintainability",
+        "Abstracting common patterns into reusable modules improves both developer productivity and product consistency",
+        "Strong architectural foundations become increasingly valuable as platform complexity grows",
+        "Rapid iteration cycles help validate assumptions and improve product-market fit"
       ],
-      "feedback": "Praised for strong work ethic and the ability to move very fast. Early on, received constructive feedback to communicate more openly about work in progress — took that forward and it became a consistent strength from that point on.",
-      "whyLeft": "The company ran out of funding and had to shut down. The entire development team was relieved as there was no remaining runway. Permar shut down fully within the following six months.",
-      "highlight": "First frontend hire at an AI-powered no-code website builder — built core product from scratch and shaped the entire frontend architecture.",
+      "feedback": "Recognized for building scalable frontend solutions, taking ownership of critical modules, and consistently delivering features within aggressive timelines.",
+      "highlight": "Played a key role in building a no-code application platform that empowered users to create business applications without technical expertise.",
       "type": "previous"
     },
     {
       "id": 3,
-      "company": "Hush",
+      "company": "EZWork",
       "role": "Software Engineer",
-      "period": "May 2022 — Apr 2023",
-      "duration": "11 mo",
-      "location": "REMOTE",
-      "tags": ["REACT", "TYPESCRIPT", "CHROME EXTENSIONS", "NODE.JS"],
+      "period": "April 2022 — June 2023",
+      "duration": "1 yr 3 mo",
+      "location": "HYBRID",
+      "tags": [
+        "REACT",
+        "TYPESCRIPT",
+        "JAVASCRIPT",
+        "REDUX",
+        "I18N",
+        "EDITORJS",
+        "REST API",
+        "MATERIAL UI"
+      ],
       "achievements": [
-        "Developed privacy-focused Chrome extension with real-time data blocking capabilities",
-        "Built backend services using Node.js for extension coordination and analytics",
-        "Implemented efficient state management for cross-tab communication"
+        "Contributed to the development of a multilingual content editor that enabled users to translate content into multiple languages with a single workflow",
+        "Built reusable editor components and content management modules, reducing development effort for future feature additions",
+        "Integrated translation services and language management APIs to support seamless content localization across regions",
+        "Improved editor performance and responsiveness when handling large documents and rich-text content",
+        "Collaborated with product and QA teams to deliver enhancements that improved usability and reduced user-reported issues",
+        "Implemented validation and content synchronization mechanisms to ensure translation consistency across languages"
       ],
       "learnings": [
-        "Browser extension development requires deep understanding of Chrome APIs and security constraints",
-        "Cross-tab state synchronization is uniquely challenging and requires careful architecture",
-        "User privacy features demand rigorous testing and compliance consideration"
+        "Localization goes beyond translation and requires careful consideration of user experience and content structure",
+        "Building editor-based applications demands a strong focus on performance, state management, and data consistency",
+        "Reusable component design significantly accelerates feature delivery and maintenance",
+        "User-centric development helps uncover usability challenges that are not visible from technical requirements alone",
+        "Cross-team collaboration is essential for delivering high-quality enterprise software"
       ],
-      "feedback": "Recognized for delivering high-quality code under tight deadlines and mentoring junior developers.",
-      "highlight": "Built privacy tools that protected thousands of users from data tracking.",
+      "feedback": "Appreciated for delivering reliable solutions, maintaining high code quality standards, and proactively resolving complex UI and editor-related challenges.",
+      "highlight": "Helped build a multilingual content editor that streamlined content localization workflows and improved productivity for global teams.",
       "type": "previous"
     }
   ]
