@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const ExperienceCard = ({ experience, isSelected, onClick }) => {
-  const { company, role, period, duration, location, tags, type } = experience;
+  const { company, role, period, duration, location, tags } = experience;
 
   return (
     <motion.div
@@ -15,20 +15,20 @@ const ExperienceCard = ({ experience, isSelected, onClick }) => {
         cursor-pointer rounded-xl p-5 transition-all duration-300
         ${
           isSelected
-            ? "bg-blue-600 shadow-lg ring-2 ring-blue-400 ring-offset-2"
-            : "bg-white hover:shadow-lg border border-gray-200"
+            ? "bg-[#a78bfa] shadow-lg ring-2 ring-[#a78bfa] ring-offset-2"
+            : "bg-[#050505] hover:shadow-lg border border-gray-200"
         }
       `}
     >
       <div className="flex justify-between items-start mb-2">
         <div>
           <h3
-            className={`text-xl font-bold ${isSelected ? "text-white" : "text-gray-900"}`}
+            className={`text-xl font-bold ${isSelected ? "text-white" : "text-green-100"}`}
           >
             {company}
           </h3>
           <p
-            className={`text-sm font-medium ${isSelected ? "text-blue-100" : "text-blue-600"}`}
+            className={`text-sm font-medium ${isSelected ? "text-blue-100" : "text-green-100"}`}
           >
             {role}
           </p>
@@ -52,13 +52,13 @@ const ExperienceCard = ({ experience, isSelected, onClick }) => {
       <div className="flex flex-wrap gap-2 mt-3">
         {location && (
           <span
-            className={`text-xs ${isSelected ? "text-blue-100" : "text-gray-500"}`}
+            className={`text-xs ${isSelected ? "text-blue-100" : "text-green-100"}`}
           >
             📍 {location}
           </span>
         )}
         <span
-          className={`text-xs ${isSelected ? "text-blue-100" : "text-gray-500"}`}
+          className={`text-xs ${isSelected ? "text-blue-100" : "text-green-100"}`}
         >
           📅 {period}
         </span>
@@ -72,7 +72,7 @@ const ExperienceCard = ({ experience, isSelected, onClick }) => {
               text-xs px-2 py-1 rounded-full font-mono
               ${
                 isSelected
-                  ? "bg-blue-500 text-white"
+                  ? "bg-[#7451dd] text-white"
                   : "bg-gray-100 text-gray-700"
               }
             `}
@@ -82,7 +82,7 @@ const ExperienceCard = ({ experience, isSelected, onClick }) => {
         ))}
         {tags.length > 4 && (
           <span
-            className={`text-xs px-2 py-1 rounded-full font-mono ${isSelected ? "bg-blue-500 text-white" : "bg-gray-100 text-gray-700"}`}
+            className={`text-xs px-2 py-1 rounded-full font-mono ${isSelected ? "bg-[#7451dd] text-white" : "bg-gray-100 text-gray-700"}`}
           >
             +{tags.length - 4}
           </span>

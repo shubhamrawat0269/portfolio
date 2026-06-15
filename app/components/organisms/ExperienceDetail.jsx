@@ -24,14 +24,14 @@ const ExperienceDetail = ({ experience }) => {
       className="bg-white rounded-2xl shadow-xl overflow-hidden"
     >
       {/* Header Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white">
+      <div className="bg-gradient-to-r bg-[#a78bfa] p-6 text-white">
         <div className="flex justify-between items-start mb-4">
           <div>
             <h2 className="text-2xl font-bold mb-1">{company}</h2>
             <p className="text-blue-100 text-lg">{role}</p>
           </div>
           {type === "current" && (
-            <span className="bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            <span className="bg-[#7451dd] text-white text-xs font-semibold px-3 py-1 rounded-full">
               CURRENT
             </span>
           )}
@@ -43,11 +43,11 @@ const ExperienceDetail = ({ experience }) => {
       </div>
 
       {/* Content Section */}
-      <div className="p-6 space-y-6">
+      <div className="p-6 space-y-6 bg-[#e7e6eb]">
         {/* Highlight */}
         {highlight && (
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg">
-            <p className="text-blue-900 text-sm font-medium">{highlight}</p>
+          <div className="bg-[#eae8ef] border-l-4 border-violet-600 p-4 rounded-r-lg">
+            <p className="text-[#7451dd] text-sm font-medium">{highlight}</p>
           </div>
         )}
 
@@ -60,7 +60,7 @@ const ExperienceDetail = ({ experience }) => {
             {tags.map((tag, idx) => (
               <span
                 key={idx}
-                className="bg-gray-100 text-gray-800 text-xs px-3 py-1.5 rounded-full font-mono"
+                className="bg-[#7451dd] text-white text-xs px-3 py-1.5 rounded-full font-mono"
               >
                 {tag}
               </span>
@@ -90,7 +90,7 @@ const ExperienceDetail = ({ experience }) => {
         </div>
 
         {/* Learnings */}
-        <div className="bg-gray-50 rounded-xl p-5">
+        <div className="bg-[#cecdd0] rounded-xl p-5">
           <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3 flex items-center">
             <span className="mr-2">💡</span> Key Learnings
           </h3>
@@ -112,7 +112,7 @@ const ExperienceDetail = ({ experience }) => {
           <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3 flex items-center">
             <span className="mr-2">🗣️</span> Feedback Received
           </h3>
-          <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+          <div className="bg-[#cecdd0] border border-green-200 rounded-lg p-4">
             <p className="text-gray-700 text-sm italic">"{feedback}"</p>
           </div>
         </div>
