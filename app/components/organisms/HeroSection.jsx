@@ -28,7 +28,7 @@ export default function HeroSection() {
         <motion.div variants={fadeUp}>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl flex flex-col gap-2 text-[#bcbaba] py-4 font-bold">
             <span>
-              Hi, I'm <span className="text-[#365398]">Shubham</span>
+              Hi, I'm <span className="text-[#a78bfa]">Shubham</span>
             </span>
             <span>I build for the web.</span>
           </h1>
@@ -47,7 +47,7 @@ export default function HeroSection() {
           className="flex flex-col md:flex-row items-center justify-center gap-4 py-10"
         >
           <a href="#contact">
-            <button className="bg-[#365398] order-2 md:order-1 text-white px-4 py-2 rounded-md cursor-pointer flex items-center gap-2 hover:bg-[#1550da] transition">
+            <button className="bg-[#a78bfa] order-2 md:order-1 text-white px-4 py-2 rounded-md cursor-pointer flex items-center gap-2 hover:bg-[#1550da] transition">
               <Mail size={18} />
               Connect with Me
             </button>

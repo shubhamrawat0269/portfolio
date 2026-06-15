@@ -25,10 +25,10 @@ export default function Home() {
       <StatsBar />
       <BeyondCode />
       <CareerSection />
+      <Contact />
+      <Footer />
+      <ScrollToTopButton />
       {/* <Services /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
-      {/* <ScrollToTopButton /> */}
     </>
   );
 }

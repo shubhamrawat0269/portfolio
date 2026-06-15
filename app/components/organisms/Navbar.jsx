@@ -61,7 +61,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <a
             href="#contact"
-            className="hidden md:flex items-center gap-3 p-1 px-4 rounded-md bg-[#adc6ff] text-[#365398]"
+            className="hidden md:flex items-center gap-3 p-1 px-4 rounded-md bg-[#a78bfa] text-white"
           >
             Hire Me
           </a>
