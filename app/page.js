@@ -7,6 +7,7 @@ import {
   JourneySection,
   StatsBar,
   BeyondCode,
+  CareerSection,
   Portfolio,
   Services,
   Footer,
@@ -23,6 +24,7 @@ export default function Home() {
       <JourneySection />
       <StatsBar />
       <BeyondCode />
+      <CareerSection />
       {/* <Services /> */}
       {/* <Contact /> */}
       {/* <Footer /> */}

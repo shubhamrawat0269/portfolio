@@ -1,10 +1,27 @@
 @import "tailwindcss";
 
 * {
-    font-family: Outfit;
-    cursor: none;
+  font-family: Outfit;
+  cursor: none;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }

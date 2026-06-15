@@ -11,6 +11,7 @@ import JourneySection from "./organisms/Story";
 import GithubActivity from "./organisms/GithubActivity";
 import ScrollToTopButton from "./atoms/ScrollToTopButton";
 import BeyondCode from "./organisms/BeyondCode";
+import CareerSection from "./organisms/CareerSection";
 
 export {
   Navbar,
@@ -25,5 +26,6 @@ export {
   JourneySection,
   GithubActivity,
   ScrollToTopButton,
+  CareerSection,
   BeyondCode,
 };
