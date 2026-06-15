@@ -8,8 +8,6 @@ import {
   StatsBar,
   BeyondCode,
   CareerSection,
-  Portfolio,
-  Services,
   Footer,
   ScrollToTopButton,
 } from "@/app/components";
@@ -28,7 +26,6 @@ export default function Home() {
       <Contact />
       <Footer />
       <ScrollToTopButton />
-      {/* <Services /> */}
     </>
   );
 }
