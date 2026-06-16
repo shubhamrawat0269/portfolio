@@ -15,8 +15,8 @@ export default function StatsBar() {
   ];
 
   return (
-    <section className="w-full py-2">
-      <div className="mx-auto max-w-6xl">
+    <section className="w-full mb-20">
+      <div className="mx-auto max-w-7xl">
         <div className="overflow-hidden rounded-[24px] border border-[#171a22] bg-[#0b0c10]">
           <div className="grid grid-cols-1 md:grid-cols-3">
             {stats.map((stat, index) => (
