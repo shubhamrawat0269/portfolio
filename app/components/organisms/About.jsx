@@ -1,26 +1,35 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeInUp } from "@/assets/assets";
 
 const About = () => {
   return (
     <section id="about" className="pb-10 max-w-screen-xl mx-auto p-3">
-      <div className="flex flex-col md:flex-row justify-between gap-5 md:gap-20">
-        <div className="">
+      <div className="flex flex-col md:flex-row gap-5 md:gap-20">
+        <motion.div
+          initial={{ x: -150, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ type: "spring", stiffness: 280, damping: 70, mass: 1 }}
+        >
           <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#7284c7]">
             About Me
           </p>
           <h2 className="text-4xl font-bold text-white md:text-5xl">
             Less robotic, more real.
           </h2>
-        </div>
+        </motion.div>
         <div className="flex gap-20 items-center">
           <motion.div
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
+            initial={{ x: 150, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 280,
+              damping: 70,
+              mass: 1,
+            }}
             className="flex flex-col space-y-3"
           >
             <p className="flex flex-col gap-5 text-xl text-[#FFFFFF] max-w-2xl">
@@ -40,37 +49,6 @@ const About = () => {
                 see, feel free to reach out. Let's build something awesome.
               </span>
             </p>
-
-            {/* Tools I Use */}
-            {/* <motion.div
-              variants={fadeInUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              <h3 className="text-2xl font-semibold mb-4 text-[#adc6ff]">Tools I Use</h3>
-              <div className="flex flex-wrap gap-2">
-                {toolsData.map((tool, index) => (
-                  <motion.div
-                    key={index}
-                    variants={scaleUpIn}
-                    custom={index}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.1 }}
-                    className="bg-white shadow rounded-xl p-2 flex items-center justify-center cursor-pointer border border-[#99582a]"
-                  >
-                    <Image
-                      src={tool}
-                      width={20}
-                      height={20}
-                      alt={`Tool ${index}`}
-                      className="max-w-full max-h-full"
-                    />
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div> */}
           </motion.div>
         </div>
       </div>

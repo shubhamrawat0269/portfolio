@@ -20,12 +20,12 @@ export default function Home() {
       <GithubActivity />
       <About />
       <JourneySection />
-      <StatsBar />
-      <BeyondCode />
-      <CareerSection />
-      <Contact />
-      <Footer />
-      <ScrollToTopButton />
+      {/* <StatsBar /> */}
+      {/* <BeyondCode /> */}
+      {/* <CareerSection /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
+      {/* <ScrollToTopButton /> */}
     </>
   );
 }

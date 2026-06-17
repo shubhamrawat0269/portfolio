@@ -18,7 +18,7 @@ export default function GithubActivity() {
         className="flex flex-col items-center justify-center gap-4 py-10"
       >
         <h2 className="text-[#b1b1b1] py-3 text-lg">GitHub Activity</h2>
-        <GitHubCalendar username="gaearon" />
+        <GitHubCalendar username="rawatshubham269" />
       </motion.div>
     </section>
   );

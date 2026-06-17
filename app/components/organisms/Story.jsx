@@ -33,7 +33,7 @@ const stories = [
 
 export default function JourneySection() {
   return (
-    <section className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <section className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       {/* Section Header */}
       <div className="mb-12 text-center">
         <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#7284c7]">
