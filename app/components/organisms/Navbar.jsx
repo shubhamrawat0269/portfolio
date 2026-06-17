@@ -27,9 +27,10 @@ const Navbar = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: -50 }}
-      animate={isScrolled ? { opacity: 1, y: 0 } : { opacity: 0.9, y: 0 }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1 }}
       className={`w-full fixed z-50 ${
         isScrolled
           ? "bg-[#000000d1] bg-opacity-50 backdrop-blur-lg shadow-sm transition-all duration-300 ease-in-sine"
