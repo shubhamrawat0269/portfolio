@@ -10,6 +10,7 @@ import GithubActivity from "./organisms/GithubActivity";
 import ScrollToTopButton from "./atoms/ScrollToTopButton";
 import BeyondCode from "./organisms/BeyondCode";
 import CareerSection from "./organisms/CareerSection";
+import Projects from "./organisms/Projects";
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   ScrollToTopButton,
   CareerSection,
   BeyondCode,
+  Projects,
 };

@@ -10,6 +10,7 @@ import {
   CareerSection,
   Footer,
   ScrollToTopButton,
+  Projects,
 } from "@/app/components";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       {/* <StatsBar /> */}
       {/* <BeyondCode /> */}
       {/* <CareerSection /> */}
+      <Projects />
       {/* <Contact /> */}
       {/* <Footer /> */}
       {/* <ScrollToTopButton /> */}
