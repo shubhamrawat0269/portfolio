@@ -9,7 +9,7 @@ const GitHubCalendar = dynamic(
 
 export default function GithubActivity() {
   return (
-    <section className="max-w-screen-xl mx-auto p-3 pb-16">
+    <section className="max-w-screen-xl mx-auto pb-12">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -18,7 +18,8 @@ export default function GithubActivity() {
         className="flex flex-col items-center justify-center gap-4 py-10"
       >
         <h2 className="text-[#b1b1b1] py-3 text-lg">GitHub Activity</h2>
-        <GitHubCalendar username="rawatshubham269" />
+        {/* <GitHubCalendar username="shubhamrawat0269" /> */}
+        <GitHubCalendar username="gaearon" />
       </motion.div>
     </section>
   );

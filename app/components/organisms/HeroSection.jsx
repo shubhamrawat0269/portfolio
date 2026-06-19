@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FileText, Mail } from "lucide-react";
 import { assets, containerVariants } from "@/assets/assets";
+import "@/app/globals.css";
 
 export default function HeroSection() {
   return (
@@ -26,13 +27,26 @@ export default function HeroSection() {
             mass: 1,
           }}
         >
-          <Image
-            src={assets.profile_img}
-            alt="Shubham Rawat"
-            width={100}
-            height={100}
-            className="rounded-full mx-auto my-4"
-          />
+          <div className="relative w-[120px] h-[120px] mx-auto my-4">
+            {/* Orbit Ring */}
+            <div className="absolute inset-0 rounded-full border-2 border-dashed border-gray-400 animate-spin-slow" />
+
+            {/* Jupiter-like Planet */}
+            <div className="absolute inset-0 animate-spin-slow">
+              <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-violet-300 via-violet-400 to-violet-500 shadow-lg shadow-violet-400/50" />
+            </div>
+
+            {/* Profile Image */}
+            <div className="absolute inset-[10px] rounded-full overflow-hidden">
+              <Image
+                src={assets.profile_img}
+                alt="Shubham Rawat"
+                width={100}
+                height={100}
+                className="rounded-full w-full h-full object-cover"
+              />
+            </div>
+          </div>
         </motion.div>
 
         {/* Text Content */}
