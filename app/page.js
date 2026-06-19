@@ -21,13 +21,13 @@ export default function Home() {
       <GithubActivity />
       <About />
       <JourneySection />
-      {/* <StatsBar /> */}
-      {/* <BeyondCode /> */}
-      {/* <CareerSection /> */}
+      <StatsBar />
+      <BeyondCode />
+      <CareerSection />
       <Projects />
-      {/* <Contact /> */}
-      {/* <Footer /> */}
-      {/* <ScrollToTopButton /> */}
+      <Contact />
+      <Footer />
+      <ScrollToTopButton />
     </>
   );
 }
