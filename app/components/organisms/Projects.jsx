@@ -9,7 +9,8 @@ export default function Projects() {
       title: "EcoTrack Dashboard",
       description:
         "A real-time environmental monitoring dashboard with interactive maps, data visualization, and predictive analytics for climate researchers.",
-      imageSrc: "/images/ecotrack.jpg",
+      imageSrc:
+        "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200",
       imageAlt: "EcoTrack Dashboard screenshot",
       category: "Data Visualization",
       featured: true,
@@ -22,7 +23,8 @@ export default function Projects() {
       title: "ArtVault Gallery",
       description:
         "A digital art marketplace and portfolio platform for emerging artists, featuring NFT integration and a curated exhibition space.",
-      imageSrc: "/images/artvault.jpg",
+      imageSrc:
+        "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=1200",
       imageAlt: "ArtVault Gallery homepage",
       category: "Marketplace",
       techStack: ["React", "Node.js", "MongoDB", "Stripe"],
@@ -34,7 +36,8 @@ export default function Projects() {
       title: "FitFlow Tracker",
       description:
         "An AI-powered fitness and nutrition tracking app with personalized workout plans, meal suggestions, and progress analytics.",
-      imageSrc: "/images/fitflow.jpg",
+      imageSrc:
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200",
       imageAlt: "FitFlow Tracker app screenshot",
       category: "Health & Fitness",
       techStack: ["React Native", "Firebase", "TensorFlow", "Expo"],
